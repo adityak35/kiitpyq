@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYQ Access</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KIIT Previous Year Question Papers</h1> <!-- New heading added here -->
+
+        <h2>Select Your Branch & Semester</h2> 
+
+        <div class="input-group">
+            <label for="branch">Select Branch</label>
+            <select id="branch">
+                <option value="CSE">CSE</option>
+                <option value="CSSE">CSSE</option>
+                <option value="CSCE">CSCE</option>
+                <option value="IT">IT</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="semester">Select Semester</label>
+            <select id="semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+
+        <button id="submit-btn">Submit</button>
+
+        <h1 id="subjects-title" style="display: none;">Subjects</h1>
+        <div id="subjects-list" class="subject-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>A project by Aditya Kr. Singh - Helping KIITians get easy access to PYQs</p>
+        <p>Follow me on <a href="https://www.linkedin.com/in/aditya-kr-singh-9055672aa/">LinkedIn</a> | <a href="https://www.instagram.com/aditya_i3/">Instagram</a></p>
+    </footer>
+    
+    
+</body>
+</html>
