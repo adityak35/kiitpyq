@@ -106,7 +106,7 @@ document.getElementById('submit-btn').addEventListener('click', () => {
                             window.location.href = 'evs.html';
                             break;
                         case 'Differential Equations and Linear Algebra':
-                            window.location.href = 'differential_equations_and_linear_algebra.html';
+                            window.location.href = 'dela.html';
                             break;
                         default:
                             alert(`${subject} page not created yet!`);
