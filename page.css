@@ -1,0 +1,244 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #171738;
+    color: #3423A6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Style for the section headings (h2) */
+.container h2 {
+    font-size: 20px;
+    color: #3423A6; /* Vibrant blue */
+    margin-top: 20px;
+    margin-bottom: 15px; /* Increased bottom margin for better separation */
+    text-transform: uppercase; /* Makes text uppercase */
+    border-bottom: 3px solid #db1f4a; /* Thicker underline in red */
+    display: inline-block; /* Keeps it compact */
+    padding-bottom: 5px;
+}
+
+.container h3 {
+    font-size: 20px;
+    color: #3423A6; /* Vibrant blue */
+    margin-top: 15px;
+    margin-bottom: 5px; /* Increased bottom margin for better separation */
+    text-transform: uppercase; /* Makes text uppercase */
+    border-bottom: 3px solid #db1f4a; /* Thicker underline in red */
+    display: inline-block; /* Keeps it compact */
+    padding-bottom: 5px;
+}
+
+/* Container Styles */
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-sizing: border-box;
+    /* Allow container to grow as needed based on content */
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 32px;
+    color: #2E1760;
+    margin-bottom: 20px;
+}
+
+/* Input Group Styles */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label Styles */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #3423A6;
+}
+
+/* Select Dropdown Styles */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3423A6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #3423A6;
+    transition: border-color 0.3s ease;
+}
+
+/* Select Hover/Focus Styles */
+select:focus {
+    border-color: #2E1760;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    background-color: #3423A6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Button Hover Styles */
+button:hover {
+    background-color: #db1f4a;
+}
+
+/* Subject List Styles */
+.subject-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.subject-list li {
+    background-color: #F0F0F0;
+    color: #171738;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #3423A6;
+    transition: all 0.3s;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Subject List Hover Styles */
+.subject-list li:hover {
+    background-color: #7180B9;
+    color: #FFFFFF;
+}
+
+
+
+/* Link Button */
+a {
+    text-decoration: none;
+}
+
+a.button {
+    display: inline-block;
+    width: 100%; /* Full width like a block */
+}
+
+/* Back Link */
+.back-link {
+    font-size: 16px;
+    color: #3423A6; /* Matching accent color */
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block; /* So margin-top works */
+}
+
+.back-link:hover {
+    color: #db1f4a; /* Change color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: auto;
+    /* font-size: 16px; */
+    /* padding: 20px; */
+    background-color: #171738;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+footer a {
+    color: #db1d1d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduces padding for smaller devices */
+    }
+
+    .container {
+        max-width: 100%; /* Full width for small devices */
+        padding: 20px; /* Reduces padding for smaller devices */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size on mobile */
+    }
+
+    label {
+        font-size: 14px; /* Smaller font size for labels */
+    }
+
+    select {
+        font-size: 14px; /* Smaller font size for select dropdown */
+    }
+
+    button {
+        font-size: 14px; /* Smaller font size for buttons */
+        padding: 10px 15px; /* Reduced padding on buttons for smaller screens */
+    }
+
+    .subject-list li {
+        padding: 12px; /* Smaller padding for list items on small screens */
+        font-size: 14px; /* Smaller font size for subject list items */
+    }
+}
+
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Smaller font size for header */
+    }
+
+    label {
+        font-size: 12px; /* Smaller label size for very small screens */
+    }
+
+    select, button {
+        font-size: 12px; /* Reduce font size for dropdown and buttons */
+    }
+
+    .subject-list li {
+        font-size: 12px; /* Smaller font for subject list items */
+        padding: 10px; /* Further reduced padding */
+    }
+}
