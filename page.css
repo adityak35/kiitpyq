@@ -5,6 +5,29 @@
     box-sizing: border-box;
 }
 
+
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    flex-direction: column; 
+    margin: 0; 
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Ensure a small gap between container and footer */
+}
+
 /* Body Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -31,16 +54,7 @@ body {
     padding-bottom: 5px;
 }
 
-.container h3 {
-    font-size: 20px;
-    color: #3423A6; /* Vibrant blue */
-    margin-top: 15px;
-    margin-bottom: 5px; /* Increased bottom margin for better separation */
-    text-transform: uppercase; /* Makes text uppercase */
-    border-bottom: 3px solid #db1f4a; /* Thicker underline in red */
-    display: inline-block; /* Keeps it compact */
-    padding-bottom: 5px;
-}
+
 
 /* Container Styles */
 .container {
@@ -100,7 +114,7 @@ select:focus {
 /* Button Styles */
 button {
     padding: 12px 20px;
-    background-color: #3423A6;
+    background-color: #0a3fbd;
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
@@ -168,26 +182,6 @@ a.button {
 }
 
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: auto;
-    /* font-size: 16px; */
-    /* padding: 20px; */
-    background-color: #171738;
-    color: #FFFFFF;
-    width: 100%;
-}
-
-footer a {
-    color: #db1d1d;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
